@@ -297,7 +297,7 @@ class HHEnhancedParser:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         
         # 1. Основной файл с вакансиями
-        vacancies_file = f'csv_for_export/hh_vacancies_enhanced_{timestamp}.csv'
+        vacancies_file = f'csv_files/hh_vacancies_enhanced_{timestamp}.csv'
         
         vacancies_data = []
         for vacancy in processed_vacancies:
@@ -325,7 +325,7 @@ class HHEnhancedParser:
         pd.DataFrame(vacancies_data).to_csv(vacancies_file, index=False, encoding='utf-8')
         
         # 2. Детальный файл технологий
-        tech_file = f'csv_for_export/hh_technologies_detailed_{timestamp}.csv'
+        tech_file = f'csv_files/hh_technologies_detailed_{timestamp}.csv'
         tech_data = []
         
         for vacancy in processed_vacancies:
@@ -344,7 +344,7 @@ class HHEnhancedParser:
         pd.DataFrame(tech_data).to_csv(tech_file, index=False, encoding='utf-8')
         
         # 3. Сводная аналитика
-        analytics_file = f'csv_for_export/hh_analytics_{timestamp}.csv'
+        analytics_file = f'csv_files/hh_analytics_{timestamp}.csv'
         self.create_analytics_summary(processed_vacancies, analytics_file)
         
         print(f"✅ Сохранены файлы:")

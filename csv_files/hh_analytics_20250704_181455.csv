@@ -1,0 +1,7 @@
+technology,total_mentions,vacancy_count,avg_salary,top_role,top_experience,top_domain
+Python,1132,496,192042.01298701297,backend,middle,fintech
+SQL,968,564,188768.8202247191,backend,junior,fintech
+Docker,744,448,198647.86666666667,backend,middle,fintech
+Git,605,449,177240.2034883721,backend,middle,fintech
+JavaScript,472,295,173280.04385964913,frontend,middle,fintech
+React,879,294,180806.14130434784,frontend,middle,fintech
