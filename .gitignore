@@ -1,0 +1,48 @@
+### Python ###
+# Виртуальные окружения (все распространенные имена)
+venv/
+env/
+.venv/
+venv*/
+env*/
+.venv*/
+
+# Кэш интерпретатора
+__pycache__/
+*.py[cod]
+.python-version
+
+# Пакеты и сборки
+build/
+dist/
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+
+# Установочные логи
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Тесты и покрытие
+.coverage
+htmlcov/
+.coverage.*
+.tox/
+.nox/
+
+# Конфиги и среда
+.env
+.venv
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Операционные системы
+.DS_Store
+Thumbs.db
